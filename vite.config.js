@@ -1,11 +1,9 @@
-import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite'
 import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/aobakwe-portfolio/',
-
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
